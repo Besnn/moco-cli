@@ -10,5 +10,5 @@ Clone repository
 
 
 
-When you type `ls && ls moco-cli` you should have something like this:
-![ls && ls moco-cli](/assets/exmpl.png)
+When you type `ls && ls moco-cli` you should have something like this:  
+![ls && ls moco-cli](/assets/ls.png)
