@@ -19,8 +19,8 @@ Open you `.bashrc` now: `nano ~/.bashrc`
 
 Add `export PATH=<absolute_directory_of_script>:$PATH` (no angle brackets)
 
-You can get the absolute path with `realpath <directory>/moco-cli` while inside moco-cli  
-If that doesn't work try `echo $(pwd)`
+You can get the absolute path with `realpath <directory>/moco-cli`  
+If that doesn't work try `echo $(pwd)` while inside moco-cli
 
 Finally, type `source ~/.bashrc`  
 
