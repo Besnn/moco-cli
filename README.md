@@ -1,2 +1,3 @@
 # moco
-Money Converter on the CLI
+**Mo**ney **Co**nverter on the CLI
+## Installation
