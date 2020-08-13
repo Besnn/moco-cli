@@ -35,7 +35,8 @@ Finally, type `source ~/.bashrc`.
 ## Usage
 ![usage0](/assets/usage0.gif)  
 Syntax is: `moco <amount> <from_currency> <to_currency> [<to_currency>]`  
-You can set an alias for _moco_ by adding `alias <alias>="moco"`
+You can set an alias for `moco` by adding `alias <alias>="moco"` in your `.bashrc`.
+
 The script can accommodate a maximum of one extra to-currency as that is the limit of the free API version.  
 
 If you encounter any problems, make sure to get [your own API key](https://free.currencyconverterapi.com/)   
