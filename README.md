@@ -40,7 +40,9 @@ You can set an alias for `moco` by adding `alias <alias>="moco"` in your `.bashr
 The script can accommodate a maximum of one extra to-currency as that is the limit of the free API version.  
 
 If you encounter any problems, make sure to get [your own API key](https://free.currencyconverterapi.com/)   
-and put it in the `API_KEY` variable in the beginning of the script.
+and put it in the `API_KEY` variable in the beginning of the script.  
+
+Type `moco help`, `moco -h`, `moco -l` or similarly to list supported currencies.
 
 ## To Do/Add
 <ul>
