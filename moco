@@ -1,6 +1,5 @@
-#!/bin/bash
-
 # syntax: moco <amount> <from> {to}
+
 
 
 declare -r API_KEY='e29d7cafb2376f82e1bb' # needed for api validation
@@ -91,7 +90,6 @@ done
 
 from_currency=$( echo $from_currency | tr '[:lower:]' '[:upper:]' )
 
-echo $from_currency
 declare -i position=0
 for curr in ${to_currencies[@]}
 do
@@ -106,7 +104,7 @@ unset IDs[$(expr $position - 1)]
 declare -i length=${#to_currencies[@]}
 declare -a rates
 declare request
-echo ${IDs[@]}
+
 for i in ${IDs[@]}
 do
 	request=$request"$i"
@@ -120,3 +118,4 @@ for ((i=0; i < length; i++))
 do
 		echo "$from_currency" "to" "$(echo ${to_currencies[$i]} | tr '[:lower:]' '[:upper:]')"":"$(echo "${rates[$i]} * $amount" | bc)""
 done
+
