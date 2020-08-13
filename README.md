@@ -14,7 +14,7 @@ Clone repository
     git clone https://github.com/Besnn/moco-cli
     ```  
 
-
+Add user permission with `sudo chmod u+x moco-cli/moco`  
 
 
 When you type `ls && ls moco-cli` you should have something like this:  
@@ -47,4 +47,5 @@ Type `moco help`, `moco -h`, `moco -l` or similarly to list supported currencies
 ## To Do/Add
 <ul>
     <li>Prettier printing</li>
+    <li>Limit fractional part to 3 places</li>
 </ul>
