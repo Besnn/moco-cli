@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# syntax: moco <amount> <from> {to}
+# syntax: moco <amount> <from> {<to>}+
 
 
 
