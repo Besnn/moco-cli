@@ -50,9 +50,3 @@ If you encounter any problems, make sure to get [your own API key](https://free.
 and put it in the `API_KEY` variable in the beginning of the script.  
 
 Type `moco help`, `moco -h`, `moco -l` or similarly to list supported currencies.
-
-## To Do/Add
-<ul>
-    <li>Prettier printing</li>
-    <li>Limit fractional part to 3 places</li>
-</ul>
