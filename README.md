@@ -1,4 +1,5 @@
 # moco-cli
+<img src='https://img.shields.io/github/languages/code-size/Besnn/moco-cli?style=plastic'></img>  
 **Mo**ney **Co**nverter on the CLI
 
 ## Features
