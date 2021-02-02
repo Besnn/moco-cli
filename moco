@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# syntax: moco <amount> <from> {to}
+# syntax: moco <amount> <from> {<to>}
 
 GREEN='\033[1;32m'
 RED='\033[1;31m'
@@ -28,19 +28,25 @@ xag xcd xdr xof xpf yer zar zmk zmw zwl) # 166 currencies
 case $1 in
 		"help"|"h"|"-h"|"--help"|"list"|"l"|"-l"|"--list")
 			if [ -f utils/.help ] || [ -f .help ]; then
-    		echo -e "Please, try one of the valid arguments bellow\n"
+    		echo -e $RED"Please, try one of the valid arguments bellow\n"$RESET_COLOR
     		< utils/.help tr ' ' ' ' | pr -t -1
 			fi
 			exit 1;;
 		"give"|"find")
-			grep -i $2 utils/.help || echo -e "Couldn't find currency. Sorry.\n" 1>&2 && exit 1
+			if [[ $2 ]]; then
+				grep -iE "$2" utils/.help || (echo -e $RED"Couldn't find currency. Sorry.\n"$RESET_COLOR 1>&2 && exit 1)
+				echo
 			exit 0
+			fi
+			echo -e $RED"Try: moco find <currency>"$RESET_COLOR 1>&2
+			echo
+			exit 1
 esac
 
 if ! [[ $1 =~ ^[[:digit:]].?+$ ]]; then
-	echo "[AMOUNT] not valid" 1>&2
-	echo "Has to be decimal" 1>&2
-	echo -e "\n"
+	echo -e $RED"[AMOUNT] not valid" 1>&2
+	echo -e "Has to be decimal" 1>&2
+	echo -e "\n"$RESET_COLOR
 	exit 1
 fi	
 
@@ -48,7 +54,7 @@ fi
 # check if parameters are inputed
 
 if [ -z "$2" ] || [ -z "$1" ] || [ -z "$3" ]; then 
-    echo "Usage: <alias> [AMOUNT] [FROM_CURRENCY] {TO_CURRENCY}" 1>&2
+    echo -e $RED"Usage: <alias> [AMOUNT] [FROM_CURRENCY] {TO_CURRENCY}"$RESET_COLOR 1>&2
     echo -e "\n" 1>&2
 	exit 1
 fi
@@ -73,9 +79,9 @@ do
 done
 
 if [ "$found_from" = false ]; then
-	echo "[FROM_CURRENCY] not valid" 1>&2
-	echo "type <alias> help for valid currencies" 1>&2
-	echo -e "\n"
+	echo -e $RED"[FROM_CURRENCY] not valid" 1>&2
+	echo -e "type <alias> help for valid currencies" 1>&2
+	echo -e "\n"$RESET_COLOR
 	exit 1
 fi
 
@@ -89,9 +95,9 @@ do
 		fi
 	done
 	if [ $to_found = false ]; then
-		echo "[TO_CURRENCY] not valid" 1>&2
-		echo "type <alias> help for valid currencies" 1>&2
-		echo -e "\n"
+		echo -e $RED"[TO_CURRENCY] not valid" 1>&2
+		echo -e "type <alias> help for valid currencies" 1>&2
+		echo -e "\n"$RESET_COLOR
 		exit 1
 	fi
 done
