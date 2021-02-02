@@ -11,7 +11,6 @@
 </ul>
 
 ## Installation
-### Linux
 Clone repository  
     ```
     git clone https://github.com/Besnn/moco-cli
@@ -23,7 +22,8 @@ Add user permission with `sudo chmod u+x moco-cli/moco`
 When you type `ls && ls moco-cli` you should have something like this:  
 ![ls && ls moco-cli](/assets/ls.png)
 
-
+### Setting PATH
+#### Linux
 Open you `.bashrc` now: `nano ~/.bashrc`  
 
 
@@ -34,6 +34,10 @@ If that doesn't work try `echo $(pwd)` while inside `moco-cli`.
 
 Finally, type `source ~/.bashrc`.  
 
+#### MacOS
+Open your `paths` file with `nano /etc/paths`.  
+
+Add there the full path of the script.
 
 ## Usage
 ![usage0](/assets/usage0.gif)  
