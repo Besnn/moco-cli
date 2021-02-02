@@ -50,3 +50,11 @@ If you encounter any problems, make sure to get [your own API key](https://free.
 and put it in the `API_KEY` variable in the beginning of the script.  
 
 Type `moco help`, `moco -h`, `moco -l` or similarly to list supported currencies.
+
+If you cannot remember the trigram for your currency, use either `moco find <currency>` or `moco give <currency>`:
+```shell
+moco give dollar
+# or you can use the | (or) operator (provided it's within quotes)
+moco find "euro|lira|peso"
+moco give 'lir|phil' # supports partial names
+```
