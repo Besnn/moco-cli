@@ -9,6 +9,7 @@
 </ul>
 
 ## Installation
+### Linux
 Clone repository  
     ```
     git clone https://github.com/Besnn/moco-cli
