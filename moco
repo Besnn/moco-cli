@@ -31,7 +31,10 @@ case $1 in
     		echo -e "Please, try one of the valid arguments bellow\n"
     		< utils/.help tr ' ' ' ' | pr -t -1
 			fi
-			exit 1
+			exit 1;;
+		"give"|"find")
+			grep -i $2 utils/.help || echo -e "Couldn't find currency. Sorry.\n" 1>&2 && exit 1
+			exit 0
 esac
 
 if ! [[ $1 =~ ^[[:digit:]].?+$ ]]; then
@@ -128,3 +131,4 @@ do
 done
 
 echo -en '\n'
+exit 0
