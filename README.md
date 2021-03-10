@@ -3,8 +3,6 @@
 <img src='https://img.shields.io/github/license/Besnn/moco-cli?color=blue&style=plastic'></img>  
 **Mo**ney **Co**nverter on the CLI
 
-API doesn't work
-
 ## Features
 <ul>
     <li>Quick and Simple</li>  
