@@ -2,6 +2,7 @@
 <img src='https://img.shields.io/github/languages/code-size/Besnn/moco-cli?style=plastic'></img> 
 <img src='https://img.shields.io/github/license/Besnn/moco-cli?color=blue&style=plastic'></img>  
 **Mo**ney **Co**nverter on the CLI
+DOESNT WORK TB FIXED
 
 ## Features
 <ul>
