@@ -7,7 +7,7 @@
 <ul>
     <li>Quick and Simple</li>  
     <li>Standalone (only <em>bash</em> and <em>bc</em>)</li>  
-    <li>Supports 166 currencies + Bitcoin</li>
+    <li>Supports 166 currencies (Bitcoin included)</li>
 </ul>
 
 ## Installation
