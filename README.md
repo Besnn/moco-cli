@@ -7,8 +7,7 @@
 <ul>
     <li>Quick and Simple</li>  
     <li>Standalone (only <em>bash</em> and <em>bc</em>)</li>  
-    <li>Supports 166 currencies</li>
-    <li>Supports cryptocurrencies</li>
+    <li>Supports 166 currencies and cryptocurrencies</li>
 </ul>
 
 ## Installation
@@ -60,6 +59,3 @@ moco find "euro|lira|peso"
 moco give 'lir|phil' # supports partial names
 ```
 Make sure to change `MOCO_DIR` variable inside script in order for the above functionalities to work.
-
-## TODO
-* Add cryptos to help
