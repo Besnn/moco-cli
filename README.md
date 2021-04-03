@@ -59,3 +59,6 @@ moco find "euro|lira|peso"
 moco give 'lir|phil' # supports partial names
 ```
 Make sure to change `MOCO_DIR` variable inside script in order for the above functionalities to work.
+
+## TODO
+* Crypto
