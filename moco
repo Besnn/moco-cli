@@ -30,7 +30,7 @@ xag xcd xdr xof xpf yer zar zmk zmw zwl) # 166 currencies
 case $1 in
 		"help"|"h"|"-h"|"--help"|"list"|"l"|"-l"|"--list")
 			if [ -f $MOCO_DIR/utils/.help ] || [ -f .help ]; then
-    		echo -e $RED"Please, try one of the valid arguments bellow\n"$RESET_COLOR
+    		echo -e $RED"Please, try one of the valid arguments below\n"$RESET_COLOR
     		< utils/.help tr ' ' ' ' | pr -t -1
 			fi
 			exit 1;;
