@@ -53,9 +53,9 @@ if ! [[ $1 =~ ^[[:digit:]].?+$ ]]; then
 fi	
 
 
-# check if parameters are inputed
+# check if parameters are inputted
 
-if [ -z "$2" ] || [ -z "$1" ] || [ -z "$3" ]; then 
+if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then 
     echo -e $RED"Usage: <alias> [AMOUNT] [FROM_CURRENCY] {TO_CURRENCY}"$RESET_COLOR 1>&2
     echo -e "\n" 1>&2
 	exit 1
@@ -69,8 +69,6 @@ to_currencies=($@)
 # check if arguments are valid
 
 found_from=false
-
-declare -a TOs
 declare -i count=0
 
 for i in ${currencies[@]}
