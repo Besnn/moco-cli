@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # syntax: moco <amount> <from> {<to>}
 
-MOCO_DIR=/home/besnn/moco
+MOCO_DIR=/home/besnn/_git/moco-cli
 
 GREEN='\033[1;32m'
 RED='\033[1;31m'
@@ -132,7 +132,7 @@ for ((i=0; i < length; i++))
 do
 		echo -en "$GREEN$from_currency" "to" "$(echo -en ${to_currencies[$i]} | tr '[:lower:]' '[:upper:]')"
 		echo -en ": "$UNDERLINE
- 		printf "%0.3f\n" $(echo "${rates[$i]} * $amount" | bc)
+ 		LC_NUMERIC="en_US.UTF-8" printf "%0.3f\n" $(echo "${rates[$i]} * $amount" | bc -l)
 		echo -en $RESET_COLOR
 done
 
